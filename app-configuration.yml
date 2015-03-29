@@ -2,7 +2,7 @@ database:
   driverClass: org.h2.Driver
   user: sa
   password: sa
-  url: jdbc:h2:file:./data/db
+  url: jdbc:h2:file:./app/db
 #  properties:
 #    hibernate.hbm2ddl.auto: create
 
@@ -31,7 +31,7 @@ logging:
     - type: console
     - type: file
       threshold: DEBUG
-      currentLogFilename: ./logs/test-output.log
-      archivedLogFilenamePattern: ./logs/test-output-%d.log.gz
+      currentLogFilename: ./app/app-output.log
+      archivedLogFilenamePattern: ./app/app-output-%d.log.gz
       archivedFileCount: 5
       timeZone: UTC
